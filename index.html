@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <meta charset="utf-8">
+    <title>Endangered Animals || JS</title>
+  </head>
+  <body>
+
+    <div class="banner">
+      <h1>Add Animal to List</h1>
+    </div>
+
+    <div class="form-container">
+      <form class="form">
+
+        <label for="common">Common Name</label>
+        <input type="text" id="common">
+        <br>
+
+        <label for="scientific">Scientific Name</label>
+        <input type="text" id="scientific">
+        <br>
+        <br>
+
+        <label for="radio-container">Conservation Status</label>
+        <div id="radio-container">
+
+            <label for="least-concern">Least Concern</label>
+            <input type="radio" name="status" value="Least Concern" id="least-concern">
+            <br>
+
+            <label for="near-threatened">Near Threatened</label>
+            <input type="radio" name="status" value="Near Threatened" id="near-threatened">
+            <br>
+
+            <label for="vulnerable">Vulnerable</label>
+            <input type="radio" name="status" value="Vulnerable" id="vulnerable">
+            <br>
+
+            <label for="endangered">Endangered</label>
+            <input type="radio" name="status" value="Endangered" id="endangered">
+            <br>
+
+            <label for="critically-endangered">Critically Endangered</label>
+            <input type="radio" name="status" value="Critically Endangered" id="critically-endangered">
+            <br>
+
+            <button type="submit" id="add_animal">Add Animal</button>
+        </div>
+        <br>
+
+      </form>
+    </div>
+    <hr>
+
+    <div class="list-container">
+
+      <div class="list-title">
+        <h1>List of Threatened, Vulnerable or Endangered Animals</h1>
+        <div class="animal-added">
+          
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
