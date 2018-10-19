@@ -13,14 +13,14 @@
     </div>
 
     <div class="form-container">
-      <form class="form">
+      <form id="form">
 
         <label for="common">Common Name</label>
-        <input type="text" id="common">
+        <input type="text" id="common" required>
         <br>
 
         <label for="scientific">Scientific Name</label>
-        <input type="text" id="scientific">
+        <input type="text" id="scientific" required>
         <br>
         <br>
 
@@ -28,7 +28,7 @@
         <div id="radio-container">
 
             <label for="least-concern">Least Concern</label>
-            <input type="radio" name="status" value="Least Concern" id="least-concern">
+            <input type="radio" name="status" value="Least Concern" id="least-concern" required>
             <br>
 
             <label for="near-threatened">Near Threatened</label>
@@ -46,10 +46,9 @@
             <label for="critically-endangered">Critically Endangered</label>
             <input type="radio" name="status" value="Critically Endangered" id="critically-endangered">
             <br>
-
-            <button type="submit" id="add_animal">Add Animal</button>
         </div>
         <br>
+        <button type="submit" id="add_animal">Add Animal</button>
 
       </form>
     </div>
@@ -59,9 +58,6 @@
 
       <div class="list-title">
         <h1>List of Threatened, Vulnerable or Endangered Animals</h1>
-        <div class="animal-added">
-          
-        </div>
       </div>
 
     </div>
