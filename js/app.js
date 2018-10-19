@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#form');
   form.addEventListener('submit', handleFormSubmit);
 
+  const deleteButton = document.querySelector('#delete');
+  deleteButton.addEventListener('submit', handleDeleteSubmit);
 });
 
 const handleFormSubmit = function (event) {
@@ -39,7 +41,9 @@ const handleFormSubmit = function (event) {
   // reset form
   this.reset();
 
-  // prevent submit if field missing
 };
 
-// empty form after submit
+const handleDeleteSubmit = function (event) {
+  const list = document.querySelector('.list-container');
+  list.innerHTML = '';
+};
