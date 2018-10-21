@@ -8,9 +8,8 @@
   </head>
   <body>
 
-    <div class="banner">
-      <h1>Add Animal to List</h1>
-    </div>
+    <div class="add">
+    <h1>Add Animal to List</h1>
 
     <div class="form-container">
       <form id="form">
@@ -26,7 +25,7 @@
 
         <label for="radio-container">Conservation Status</label>
         <div id="radio-container">
-
+        <br>
             <label for="least-concern">Least Concern</label>
             <input type="radio" name="status" value="Least Concern" id="least-concern" required>
             <br>
@@ -52,16 +51,14 @@
 
       </form>
     </div>
-    <hr>
+  </div>
 
+  <div class="list">
     <h1>List of Threatened, Vulnerable or Endangered Animals</h1>
-    <div id="delete">
-      <button type="submit" name="delete-all">Delete List</button>
-    </div>
-
+    <button type="submit" name="delete-all" id="delete">Delete List</button>
     <div class="list-container">
 
     </div>
-
+  </div>
   </body>
 </html>

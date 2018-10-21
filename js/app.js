@@ -5,24 +5,24 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   const deleteButton = document.querySelector('#delete');
-  deleteButton.addEventListener('submit', handleDeleteSubmit);
+  deleteButton.addEventListener('click', handleDeleteSubmit);
 });
 
 const handleFormSubmit = function (event) {
   event.preventDefault();
 
-  // grab values
+  // grab input values
   const commonName = this.common.value;
   const sciName = this.scientific.value;
   const status = this.status.value;
 
-  // create container div for new addition
+  // create html div to contain new additions
   const newListItem = document.createElement('div');
   newListItem.classList.add('animal-added');
   const list = document.querySelector('.list-container');
   list.appendChild(newListItem);
 
-  // create child elements within div
+  // create child elements within div to contain the text and values
   const itemHeader = document.createElement('p');
   itemHeader.classList.add('name');
   newListItem.appendChild(itemHeader);
@@ -33,12 +33,12 @@ const handleFormSubmit = function (event) {
   itemStatus.classList.add('status');
   newListItem.appendChild(itemStatus);
 
-  // input values
+  // input form values
   itemHeader.textContent = `${ commonName }`;
   itemLatin.textContent = `${ sciName }`;
   itemStatus.textContent = `${ status }`
 
-  // reset form
+  // reset to empty form
   this.reset();
 
 };

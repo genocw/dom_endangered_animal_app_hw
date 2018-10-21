@@ -1,0 +1,73 @@
+html {
+  min-height: 100vh;
+  background-image: url("../images/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+body {
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 3em;
+  height: 100%;
+  display: grid;
+  grid-template-areas:  "form list";
+  grid-template-columns: 1fr 1fr;
+}
+
+.add {
+  grid-area: form;
+  margin-right: 5em;
+}
+
+.list {
+  grid-area: list;
+  margin-left: 5em;
+}
+
+.add, .list {
+  border: 1px solid #F97C7E;
+  border-radius: 6px;
+  background-color: rgba(249, 124, 126, 0.63);
+  padding: 2em;
+  height: auto;
+  align-items: center;
+}
+
+.banner, h1 {
+  font-family: helvetica, sans-serif;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 150px;
+}
+
+textarea, input {
+  margin-bottom: 5px;
+  padding:2px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #CCC;
+}
+
+button {
+  margin-left:60px;
+  padding:2px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:2px solid #06C;
+  background-color:#00ADFF;
+  color:#fff;
+  font-weight:bold;
+}
+
+textarea:focus, input:focus {
+	border: 2px solid #00ADFF;
+}
